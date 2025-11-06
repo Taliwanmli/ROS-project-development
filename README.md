@@ -1,0 +1,1 @@
+This repository contains my practice workspace for ROS (Robot Operating System). It includes custom packages, publisher and subscriber nodes, message definitions, and other exercises completed while learning how to work with ROS and its core tools (catkin, roscore, rosrun, etc.). The purpose of this repo is to track my progress and serve as a reference for future ROS development.
