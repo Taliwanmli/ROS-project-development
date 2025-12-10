@@ -1,0 +1,16 @@
+<launch>
+  <node pkg="motion_control" type="location_server.py" name="location_lookup_server" output="screen" />
+
+  <node pkg="motion_control" type="navigation_actions.py" name="navigation_actions" output="screen">
+    <param name="odom_topic" value="/base_pose_ground_truth" />
+    <param name="cmd_vel_topic" value="/cmd_vel" />
+    <param name="distance_tolerance" value="0.35" />
+    <param name="angle_tolerance" value="0.05" />
+  </node>
+
+  <node pkg="motion_control" type="delivery_client.py" name="delivery_client" output="screen">
+    <param name="first_location" value="kitchen" />
+    <param name="second_location" value="mail_room" />
+    <param name="look_at_point" value="[6.5, 6.5]" />
+  </node>
+</launch>

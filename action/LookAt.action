@@ -1,0 +1,9 @@
+# goal
+geometry_msgs/Point target
+---
+# result
+bool success
+string message
+---
+# feedback
+float32 angle_error

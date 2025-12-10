@@ -1,0 +1,5 @@
+string name
+---
+bool success
+geometry_msgs/Point position
+string message
